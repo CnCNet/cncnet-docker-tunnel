@@ -5,7 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update && \
         apt-get install -y software-properties-common
 
-# Update Repository
+# add extra repository for backports
 RUN add-apt-repository ppa:dotnet/backports -y
 
 # Update and install necessary packages
