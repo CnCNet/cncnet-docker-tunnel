@@ -16,9 +16,7 @@ RUN apt-get update && \
 # Fix "No usable version of libssl was found" .NET Core error
 # .NET Core 3.1 only works with OpenSSL 1.x, but Ubuntu 22.04 LTS comes with much newer OpenSSL 3.0
 # Package URL taken from https://gist.github.com/joulgs/c8a85bb462f48ffc2044dd878ecaa786
-RUN apt-get update &&\
-apt-get install wget -y &&\
-wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb &&\
+RUN wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb &&\
 dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
 
 # Set the working directory
