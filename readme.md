@@ -2,7 +2,8 @@
 A repo that contains a dockerfile to create a cncnet tunnel server in docker
 
 1.
-Clone the dockerfile from this repo to your server
+Clone the dockerfile from this repo to your server.
+
 You will need to edit your server name here too
 
 3.
