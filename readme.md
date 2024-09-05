@@ -6,7 +6,7 @@ Clone the dockerfile from this repo to your server.
 
 You will need to edit your server name here too
 
-3.
+2.
 Build the docker container from the docker file as below:
 ```sh
 docker build -t my-tunnel-server .
