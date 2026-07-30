@@ -147,10 +147,10 @@ docker compose up -d
 
 ## Logs
 
-The server writes to `cncnet-server.log` inside the container. To follow it:
+The server writes its output to `/app/cncnet-server.log` inside the container (not to the container's stdout, so `docker logs` will be empty). To view or follow it:
 
 ```sh
-docker logs -f my-tunnel-server
+docker exec my-tunnel-server tail -f /app/cncnet-server.log
 ```
 
 ## Sponsored by
