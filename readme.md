@@ -6,6 +6,14 @@ A tunnel server relays game traffic to help players connect to each other for on
 
 [![Build and Publish Docker Image](https://github.com/CnCNet/cncnet-docker-tunnel/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/CnCNet/cncnet-docker-tunnel/actions/workflows/docker-publish.yml)
 
+> [!IMPORTANT]
+> **This image is based on the older `cncnet-server` binary and now-deprecated runtimes** — it pulls a build that depends on .NET 6 (end-of-life) and is pinned to Ubuntu 22.04.
+>
+> For new deployments, use the actively maintained **.NET Core** tunnel instead:
+> **[CnCNet/cncnet-docker-dotnetcore-tunnel](https://github.com/CnCNet/cncnet-docker-dotnetcore-tunnel)** (.NET 8/9/10, configurable via environment variables, prebuilt images).
+>
+> This repo is kept for reference and existing setups.
+
 ---
 
 ## Quick Start (Prebuilt Image)
