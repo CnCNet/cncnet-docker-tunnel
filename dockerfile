@@ -1,5 +1,7 @@
 # Start with the Ubuntu base image
-FROM ubuntu:latest
+# Pinned to 22.04 LTS: the dotnet/backports PPA below still provides dotnet-sdk-6.0
+# for jammy, and the libssl1.1 fix further down targets this release.
+FROM ubuntu:22.04
 
 # Install Common Software Properties
 RUN apt-get update && \
